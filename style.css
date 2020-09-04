@@ -1,0 +1,58 @@
+body {
+    margin: 0 auto;
+    background: linear-gradient(to right, #1e3c72, #2a5298)
+}
+
+header {
+    text-align: center;
+    background: rgb(44, 105, 211);
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+main {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    margin: 10px 25%;
+    background: #9adfff;
+    font-size: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.justify {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.unordered {
+    list-style-type: disc;
+}
+
+.transparent {
+    border: none;
+    padding: 5px;
+    background: transparent;
+    font-size: 25px;
+}
+
+.underline {
+    border-bottom: solid 4px blue;
+}
+
+.delete-button {
+    border-color: rgb(147, 3, 3);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background: red;
+    float: right;
+    top: 0;
+}

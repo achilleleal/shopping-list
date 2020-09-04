@@ -7,10 +7,24 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Shopping list</h1>
-    <input type="text">
+
+    <header>
+        <h1>Shopping list</h1>
+        <input type="text" placeholder="Add an item to the list">
+        <button>Add</button>
+        <div class="justify">
+            <button id="list-changer">Change list type</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="justify">
+            <input type="text" class="text-center transparent underline"  placeholder="Enter a title for the list" >
+        </div>
+        <ol class="unordered">
+        </ol>
+    </main>
+
     <script src='./index.js'></script>
-    <div id="list">
-    </div>
 </body>
 </html>
