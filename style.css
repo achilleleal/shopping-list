@@ -1,7 +1,32 @@
+/* TODO: Improve UI */
+
 body {
     margin: 0 auto;
     background: linear-gradient(to right, #1e3c72, #2a5298)
 }
+
+button {
+    border-radius: 5px;
+}
+
+/**** GENERAL CLASSES ****/
+
+.text-center {
+    text-align: center;
+}
+
+.justify {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/**** HEADER ****/
 
 header {
     text-align: center;
@@ -9,9 +34,8 @@ header {
     padding: 10px;
 }
 
-.text-center {
-    text-align: center;
-}
+
+/**** INNER LIST AREA ****/
 
 main {
     border-radius: 5px;
@@ -24,12 +48,12 @@ main {
 
 li {
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 
-.justify {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+.list-item {
+    width: 75%;
+    
 }
 
 .unordered {
@@ -47,12 +71,26 @@ li {
     border-bottom: solid 4px blue;
 }
 
+textarea {
+    display: none;
+}
+
+/**** LIST BUTTONS ****/
+
 .delete-button {
     border-color: rgb(147, 3, 3);
-    border-radius: 100%;
+    border-radius: 40%;
     width: 20px;
     height: 20px;
     background: red;
     float: right;
-    top: 0;
+    margin: 10px 25px;
+}
+
+#clear-list-btn {
+    background: rgb(255, 77, 77);
+}
+
+#copy-list-btn {
+    background: cyan;
 }

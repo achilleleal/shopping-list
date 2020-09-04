@@ -18,11 +18,21 @@
     </header>
 
     <main>
-        <div class="justify">
-            <input type="text" class="text-center transparent underline"  placeholder="Enter a title for the list" >
+        <div class="space-between">
+            <button id="clear-list-btn">Clear List</button>
+            <button id="copy-list-btn">Copy list</button>
         </div>
+        <div class="justify">
+            <input type="text" class="text-center transparent underline"  placeholder="Enter this list's title" >
+        </div>
+
         <ol class="unordered">
         </ol>
+
+        <!-- This textarea is here to be able to copy the elements of the list without
+        having to create and delete a textarea every time using the DOM. 
+        Its not displayed using CSS. -->
+        <textarea></textarea>
     </main>
 
     <script src='./index.js'></script>
