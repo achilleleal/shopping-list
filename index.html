@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping list</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
     <header>
         <h1>Shopping list</h1>
-        <input type="text" placeholder="Add an item to the list">
+        <input type="text" class="text-center" placeholder="Add an item to the list">
         <button>Add</button>
         <div class="justify">
             <button id="list-changer">Change list type</button>
@@ -23,12 +24,13 @@
             <button id="copy-list-btn">Copy list</button>
         </div>
         <div class="justify">
-            <input type="text" class="text-center transparent underline"  placeholder="Enter this list's title" >
+            <input id="list-title" type="text" class="text-center transparent underline"  placeholder="Enter this list's title" >
         </div>
 
         <ol class="unordered">
         </ol>
 
+        
         <!-- This textarea is here to be able to copy the elements of the list without
         having to create and delete a textarea every time using the DOM. 
         Its not displayed using CSS. -->

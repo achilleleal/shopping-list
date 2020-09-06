@@ -1,12 +1,17 @@
-/* TODO: Improve UI */
+/* TODO: Make fully responsive */
+
+* {
+    font-family: 'Kufam';
+}
 
 body {
     margin: 0 auto;
-    background: linear-gradient(to right, #1e3c72, #2a5298)
+    background: #d0f5ba;
 }
 
 button {
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
 
 /**** GENERAL CLASSES ****/
@@ -30,8 +35,13 @@ button {
 
 header {
     text-align: center;
-    background: rgb(44, 105, 211);
+    background: rgba(0, 121, 38, 0.728);
     padding: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
 }
 
 
@@ -42,8 +52,15 @@ main {
     padding: 10px;
     margin: 10px;
     margin: 10px 25%;
-    background: #9adfff;
+    background: #045b11;
     font-size: 20px;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    color: white;
+}
+
+main:hover {
+    transform: scale(1.05);
 }
 
 li {
@@ -51,9 +68,14 @@ li {
     margin-left: 10px;
 }
 
+#list-title {
+    color: white;
+    font-style: italic;
+}
+
 .list-item {
+    color: white;
     width: 75%;
-    
 }
 
 .unordered {
@@ -68,7 +90,8 @@ li {
 }
 
 .underline {
-    border-bottom: solid 4px blue;
+    border-bottom: solid rgb(55, 164, 1);
+    width: 75%;
 }
 
 textarea {
@@ -80,7 +103,6 @@ textarea {
 .delete-button {
     border-color: rgb(147, 3, 3);
     border-radius: 40%;
-    width: 20px;
     height: 20px;
     background: red;
     float: right;
@@ -88,9 +110,11 @@ textarea {
 }
 
 #clear-list-btn {
+    border-color: rgb(147, 3, 3);
     background: rgb(255, 77, 77);
 }
 
 #copy-list-btn {
-    background: cyan;
+    background: rgba(6, 245, 82, 0.728);
+    border-color: rgb(2, 169, 49);
 }
