@@ -12,6 +12,12 @@ button {
     padding: 5px 10px;
 }
 
+header input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 input:focus {
     outline: none;
 }
@@ -51,13 +57,13 @@ h1 {
 
 main {
     background: #e7ffd8;
-    padding: 5vh 0;
+    padding: 4vh 0;
 }
 
 #list {
     border-radius: 5px;
     padding: 10px;
-    margin: 5vh 20%;
+    margin: 0 20%;
     background: #045b11;
     font-size: 20px;
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.5);
@@ -83,8 +89,6 @@ li {
     color: white;
     width: 75%;
 }
-
-
 
 .unordered {
     list-style-type: disc;
@@ -138,4 +142,39 @@ footer {
 img {
     width: 40px;
     margin: 10px;
+    transition: 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+
+    #list {
+        margin: 0 5%;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #list-title {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .list-item {
+        font-size: 20px;
+        width: 70%;
+    }
+
+    .delete-button {
+        margin: 6px 10px;
+    }
+
+    img {
+        margin: 0;
+    }
 }
