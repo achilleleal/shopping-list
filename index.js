@@ -1,15 +1,9 @@
-// TODO: Copy list contents to clipboard. 
-// TODO: Be able to create a second list.
-// TODO: Search list item on Amazon.
-
-
 const input = document.querySelector('input');
 const addItemButton = document.querySelector('button');
 const list = document.querySelector('ol');
 const listChangerButton = document.getElementById('list-changer');
 const clearListButton = document.getElementById('clear-list-btn');
-const copyListButton = document.getElementById('copy-list-btn');
-
+// const copyListButton = document.getElementById('copy-list-btn');
 
 const deleteButton = () => {
     let dltButton = document.createElement('button');
@@ -49,18 +43,18 @@ const clearListContents = () => {
     list.innerHTML = "";
 }
 
-const copyListContents = () => {
-    const clipboard = document.querySelector('textarea');
-    const listItems = document.querySelectorAll('li');
+// const copyListContents = () => {
+//     const clipboard = document.querySelector('textarea');
+//     const listItems = document.querySelectorAll('li');
 
-    for (let i = 0; i < listItems.length; i++) {
-        clipboard.value += `${listItems[i].firstChild.value} \n`
+//     for (let i = 0; i < listItems.length; i++) {
+//         clipboard.value += `${listItems[i].firstChild.value} \n`
         
-    }
-    clipboard.select();
-    document.execCommand("copy");
-    clipboard.value = '';
-}
+//     }
+//     clipboard.select();
+//     document.execCommand("copy");
+//     clipboard.value = '';
+// }
 
 input.addEventListener('keypress', addItemAfterEnter);
 
@@ -70,4 +64,4 @@ listChangerButton.addEventListener('click', changeListType);
 
 clearListButton.addEventListener('click', clearListContents);
 
-copyListButton.addEventListener('click', copyListContents);
+// copyListButton.addEventListener('click', copyListContents);
