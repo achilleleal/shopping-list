@@ -1,17 +1,19 @@
-/* TODO: Make fully responsive */
-
 * {
-    font-family: 'Kufam';
+    font-family: Kufam, Geneva, Verdana, sans-serif;
 }
 
 body {
     margin: 0 auto;
-    background: #d0f5ba;
+    background:rgba(0, 121, 38, 0.728);
 }
 
 button {
     border-radius: 10px;
     padding: 5px 10px;
+}
+
+input:focus {
+    outline: none;
 }
 
 /**** GENERAL CLASSES ****/
@@ -35,7 +37,7 @@ button {
 
 header {
     text-align: center;
-    background: rgba(0, 121, 38, 0.728);
+    background: var(--main-color);
     padding: 10px;
 }
 
@@ -48,10 +50,14 @@ h1 {
 /**** INNER LIST AREA ****/
 
 main {
+    background: #e7ffd8;
+    padding: 5vh 0;
+}
+
+#list {
     border-radius: 5px;
     padding: 10px;
-    margin: 10px;
-    margin: 10px 25%;
+    margin: 5vh 20%;
     background: #045b11;
     font-size: 20px;
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.5);
@@ -59,7 +65,7 @@ main {
     color: white;
 }
 
-main:hover {
+#list:hover {
     transform: scale(1.05);
 }
 
@@ -78,6 +84,8 @@ li {
     width: 75%;
 }
 
+
+
 .unordered {
     list-style-type: disc;
 }
@@ -90,7 +98,7 @@ li {
 }
 
 .underline {
-    border-bottom: solid rgb(55, 164, 1);
+    border-bottom: solid rgba(0, 121, 38, 0.728);
     width: 75%;
 }
 
@@ -102,9 +110,9 @@ textarea {
 
 .delete-button {
     border-color: rgb(147, 3, 3);
-    border-radius: 40%;
-    height: 20px;
-    background: red;
+    border-radius: 50%;
+    height: 24px;
+    background: rgb(255, 77, 77);
     float: right;
     margin: 10px 25px;
 }
@@ -117,4 +125,17 @@ textarea {
 #copy-list-btn {
     background: rgba(6, 245, 82, 0.728);
     border-color: rgb(2, 169, 49);
+}
+
+/**** FOOTER ****/
+
+footer {
+    background: var(--main-color);
+    padding: 10px;
+    color: white;
+}
+
+img {
+    width: 40px;
+    margin: 10px;
 }

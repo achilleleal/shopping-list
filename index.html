@@ -11,7 +11,7 @@
 
     <header>
         <h1>Shopping list</h1>
-        <input type="text" class="text-center" placeholder="Add an item to the list">
+        <input id="add-input" type="text" class="text-center" placeholder="Add an item to the list">
         <button>Add</button>
         <div class="justify">
             <button id="list-changer">Change list type</button>
@@ -19,23 +19,35 @@
     </header>
 
     <main>
-        <div class="space-between">
-            <button id="clear-list-btn">Clear List</button>
-            <button id="copy-list-btn">Copy list</button>
-        </div>
-        <div class="justify">
-            <input id="list-title" type="text" class="text-center transparent underline"  placeholder="Enter this list's title" >
-        </div>
+        <div id="list">
+            <div class="space-between">
+                <button id="clear-list-btn">Clear List</button>
+                <!-- <button id="copy-list-btn">Copy list</button> -->
+            </div>
+            <div class="justify">
+                <input id="list-title" type="text" class="text-center transparent underline"  placeholder="Enter this list's title" >
+            </div>
 
-        <ol class="unordered">
-        </ol>
-
+            <ol class="unordered">
+            </ol>
+        </div>
         
         <!-- This textarea is here to be able to copy the elements of the list without
         having to create and delete a textarea every time using the DOM. 
         Its not displayed using CSS. -->
         <textarea></textarea>
     </main>
+
+    <footer class="text-center">
+        <p> A simple list made with vanilla HTML, CSS and JS.</p>
+        <span> Made with ❤️ by Sebastián Leal.</span>
+        <div class="justify">
+            <a href="https://github.com/achilleleal/shopping-list" target="_blank">
+                <img src="./GitHub-Mark-64px.png" alt="Github">
+            </a>
+        </div>
+        <span id="date">September, 2020.</span>
+    </footer>
 
     <script src='./index.js'></script>
 </body>
